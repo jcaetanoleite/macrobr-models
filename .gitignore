@@ -47,3 +47,22 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Dados grandes e sensíveis
+projects/*/data/raw/*
+projects/*/data/processed/*
+!projects/*/data/raw/.gitkeep
+!projects/*/data/processed/.gitkeep
+
+# Outputs intermediários
+projects/*/outputs/figures/*.png
+projects/*/outputs/figures/*.jpg
+!projects/*/outputs/figures/.gitkeep
+
+# Credenciais
+.Renviron
+.env
+
+# Cache
+.quarto/
+_cache/
